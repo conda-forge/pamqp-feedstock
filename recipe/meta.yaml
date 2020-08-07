@@ -1,18 +1,18 @@
 {% set name = "pamqp" %}
-{% set version = "2.3.0" %}
+{% set version = "3.0.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 5cd0f5a85e89f20d5f8e19285a1507788031cfca4a9ea6f067e3cf18f5e294e8
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 0a9b49bde3f554ec49b47ebdb789133979985f24d5f4698935ed589a2d4392a4
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -38,7 +38,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'pamqp is a pure-python AMQP 0-9-1 frame encoder and decoder'
+  summary: pamqp is a pure-python AMQP 0-9-1 frame encoder and decoder
   description: |
     pamqp is a pure-python AMQP 0-9-1 frame encoder and decoder. The aim is to create a client agnostic python encoder and decoder for general purpose use.
   doc_url: https://pamqp.readthedocs.io/
