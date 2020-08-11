@@ -31,7 +31,6 @@ test:
     - pamqp.encode
     - pamqp.exceptions
     - pamqp.heartbeat
-    - pamqp.specification
 
 about:
   home: https://github.com/gmr/pamqp
