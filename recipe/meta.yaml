@@ -1,5 +1,5 @@
 {% set name = "pamqp" %}
-{% set version = "3.1.0" %}
+{% set version = "3.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e4f0886d72c6166637a5513626148bf5a7e818073a558980e9aaed8b4ccf30da
+  sha256: 43b8545ef2d5b8aa0a41b3461bba0b2759da1fc403a3cb73341b3fce0592033d
 
 build:
   number: 0
