@@ -118,4 +118,4 @@ Feedstock Maintainers
 =====================
 
 * [@gregfreeman](https://github.com/gregfreeman/)
-
+* [@sphuber](https://github.com/sphuber)
