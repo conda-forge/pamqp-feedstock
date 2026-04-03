@@ -10,19 +10,21 @@ source:
   sha256: 0acc96ae642a534c61f12942ee23167ed52624209baa92c9848d0970f4604682
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - hatchling
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pamqp
     - pamqp.frame
