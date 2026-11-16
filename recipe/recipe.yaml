@@ -2,8 +2,7 @@ schema_version: 1
 
 context:
   name: pamqp
-  version: "5.0.0"
-  python_min: "3.11"
+  version: "6.0.0"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: d76dd4af900802483cda5f318a5328c86a1e9b127159f5455b17d9a0bb658b89
+  sha256: 3a6bde25adc93fc43755b16433f8f65aa761b43664d55f10c0e4cb1e4313eb94
 
 build:
   number: 0
